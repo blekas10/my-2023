@@ -51,25 +51,6 @@ export default function Home({products}) {
           </div>
 
           <div className='bg-blue-100 py-4'></div>
-
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {products.map(product => (
-                <div key={product._id} className="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img src={`/${product.image}`} alt="" className="w-full"></img>
-                    <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">{product.name}</div>
-                    <p className="text-gray-700 text-base">{product.description}</p>
-                    <p className="text-gray-700 text-base">Amount: {product.amount}</p>
-                    <p className="text-gray-700 text-base">Category: {product.category}</p>
-                    </div>
-                    <div className='flex justify-evenly text-center py-4'>
-                    <button className='bg-gray-300 p-2'>Prideti i krepseli</button>
-                    <div className='p-2 text-xl'>{product.price}e</div>
-                    </div>
-                </div>
-                ))}
-          </div> */}
-          
         </div>
       </Layout>
       
