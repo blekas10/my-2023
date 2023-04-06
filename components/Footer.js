@@ -8,7 +8,6 @@ export default function Footer(){
     const router = useRouter();
     const path = router.pathname;
     const {selectedProducts} = useContext(ProductsContext);
-    console.log({selectedProducts});
     return(
         <footer className="sticky bottom-0 bg-white p-4 w-full flex border-t border-gray-200 justify-evenly" >
             <Link href={'/'} className={"flex" + (path === '/' ? ' text-blue-500' : '')}>

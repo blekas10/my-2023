@@ -27,15 +27,15 @@ export default function Home({products}) {
     
       <Layout>
         <div className='mx-5'>
-          <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search for products..." className='bg-grey-100 w-full py-2 px-4 rounded-xl'></input>
+          <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search for products..." className='bg-grey-100 w-full py-2 px-4 border rounded-xl'></input>
 
           <div>
               {categoriesNames.map(categoryName => (
                 <div className='text-xl text-bold text-center' key={categoryName}>
                   {products.find(p => p.category === categoryName) && (
                     <div>
-                      <h2 className='capitalize'>{categoryName}</h2>
-                      <div className='bg-blue-100 py-4'></div>
+                      <h2 className='capitalize mt-10 mb-5'>{categoryName}</h2>
+                      <div className='bg-blue-100 py-4 mb-10'></div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                           {products.filter(p  => p.category === categoryName).map(productInfo =>(
                             <div key={productInfo._id}>
